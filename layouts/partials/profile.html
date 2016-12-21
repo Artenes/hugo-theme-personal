@@ -6,8 +6,8 @@
 				<figure>
 					<img src="{{ .Site.Data.profile.picture }}" alt="{{ .Site.Data.profile.name }}" class="img-circle profile">
 				</figure>
-				<h1>{{ .Site.Data.profile.name | markdownify }}</h1>
-				<p>{{ .Site.Data.profile.bio | markdownify }}</p>
+				<h1>{{ .Site.Data.profile.name | default "" | markdownify }}</h1>
+				<p>{{ .Site.Data.profile.bio | default "" | markdownify }}</p>
 			</div>
 		</div>
 
@@ -16,10 +16,10 @@
 			{{ range .Site.Data.years.of }}
 				
 				<div class="col-md-12 fh5co-counter">
-					<div class="fh5co-number fh5co-left">{{ .years | markdownify }}</div>
+					<div class="fh5co-number fh5co-left">{{ .years | default "" | markdownify }}</div>
 					<div class="fh5co-text">
-						<h3 class="border-bottom">{{ .what | markdownify }}</h3>
-						<p>{{ .details | markdownify }}</p>
+						<h3 class="border-bottom">{{ .what | default "" | markdownify }}</h3>
+						<p>{{ .details | default "" | markdownify }}</p>
 					</div>
 				</div>
 
@@ -31,7 +31,7 @@
 
 			{{ range .Site.Data.social.network }}
 
-				<li><a href="{{ .link }}" target="_blank"><i class="icon-{{ .icon }}"></i></a></li>
+				<li><a href="{{ .link | default "#" }}" target="_blank"><i class="icon-{{ .icon | default "link" }}"></i></a></li>
 
 			{{ end }}
 
