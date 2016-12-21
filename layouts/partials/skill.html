@@ -1,0 +1,23 @@
+<div class="fh5co-tab-content" data-content="4">
+	<div class="fh5co-content-inner">
+		<div class="row">
+			
+			<div class="col-md-12">
+				<p>{{ .Site.Data.skill.description | default "" | markdownify }}</p>
+			</div>
+
+			{{ range .Site.Data.skill.in }}
+
+				<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="{{ .percentage | default "100" }}">
+						<span>
+							<strong>{{ .what | default "" | markdownify }}</strong>{{ .percentage | default "100" }}%
+						</span>
+					</div>
+				</div>
+
+			{{ end }}
+
+		</div>
+	</div>
+</div>

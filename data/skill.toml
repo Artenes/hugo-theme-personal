@@ -1,0 +1,29 @@
+description = """
+
+Here you can display a list of your skills and say how good you are at them.
+
+"""
+
+[[in]]
+what = "HTML5"
+percentage = "95"
+
+[[in]]
+what = "CSS3"
+percentage = "93"
+
+[[in]]
+what = "jQuery"
+percentage = "90"
+
+[[in]]
+what = "PHP"
+percentage = "89"
+
+[[in]]
+what = "MySQL"
+percentage = "85"
+
+[[in]]
+what = "AngularJS"
+percentage = "90"
