@@ -1,0 +1,35 @@
+description = """
+
+Here you can display a list of degrees, courses, etc.
+
+"""
+
+[[formation]]
+icon = "graduation-cap"
+institute = "[University of Colorado](http://www.colorado.edu/)"
+period = "2001-2004"
+description = """
+
+Degree of **awesomeness** at University of Colorado. Just plain awesome!
+
+"""
+
+[[formation]]
+icon = "pencil2"
+institute = "High School Musical"
+period = "2001-2004"
+description = """
+
+High School degree. **Finally!** (famous last words).
+
+"""
+
+[[formation]]
+icon = "play"
+institute = "Codecademy"
+period = "2001-2004"
+description = """
+
+A programming course. Now I can **code**!
+
+"""
