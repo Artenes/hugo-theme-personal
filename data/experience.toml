@@ -1,0 +1,35 @@
+description = """
+
+Here you can display a list of your current and past jobs and professional experiences.
+
+"""
+
+[[company]]
+icon = "google"
+period = "2001-2004"
+company = "Google"
+description = """
+
+Worked as the guy who drinked coffe for senior programmers.
+
+"""
+
+[[company]]
+icon = "yahoo"
+period = "2001-2004"
+company = "Yahoo"
+description = """
+
+Worked as the guy who screamed yahoo at the hallways.
+
+"""
+
+[[company]]
+icon = "search"
+period = "2001-2004"
+company = "Bing"
+description = """
+
+Worked as the guy who taped the dog's nose and that made a 'bing' noise.
+
+"""
